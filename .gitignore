@@ -1,0 +1,62 @@
+﻿# ==============================================
+#  Smart Farming AI Agent — .gitignore
+# ==============================================
+
+# Environment / secrets — NEVER commit these
+.env
+*.env
+.env.*
+!env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.virtualenv/
+
+# RAG vector store (auto-generated, can be large)
+data/vector_store/
+*.pkl
+*.faiss
+*.index
+
+# IDE / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+desktop.ini
+ehthumbs.db
